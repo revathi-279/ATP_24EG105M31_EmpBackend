@@ -1,0 +1,39 @@
+GET http://localhost:9000/employee-api/employees
+
+###
+POST http://localhost:9000/employee-api/employees
+Content-Type: application/json
+
+{
+    "name":"Revathi",
+    "email":"revathi@gmail.com",
+    "mobile":8317657334,
+    "designation":"Software Engineer",
+    "companyName":"Microsoft"
+}
+
+###
+POST http://localhost:9000/employee-api/employees
+Content-Type: application/json
+
+{
+    "name":"Krishna",
+    "email":"krishna@gmail.com",
+    "mobile":987654321,
+    "designation":"CEO",
+    "companyName":"Google"
+}
+
+###
+PUT http://localhost:9000/employee-api/employees/revathi@gmail.com
+Content-Type: application/json
+
+{
+    "name":"Revathi",
+    "email":"revathi@gmail.com",
+    "mobile":8317657334,
+    "designation":"Software Engineer",
+    "companyName":"Google"
+}
+###
+DELETE http://localhost:9000/employee-api/employees/69ca284d51b38ee45d0d3f33
